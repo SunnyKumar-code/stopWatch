@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #eceff1, #b0bec5);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 60vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: perspective(1000px) rotateX(5deg);
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+}
+
+#stopwatch {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    box-shadow: 10px 10px 20px #b0b0b0, -10px -10px 20px #ffffff;
+    margin-bottom: 40px;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    color: #ffffff;
+    box-shadow: 2px 2px 5px #0056b3, -2px -2px 5px #007bff;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #0056b3, #004080);
+}
+
+button:active {
+    box-shadow: inset 10px 10px 20px #0056b3, inset -10px -10px 20px #007bff;
+    background: linear-gradient(145deg, #004080, #0056b3);
+}
